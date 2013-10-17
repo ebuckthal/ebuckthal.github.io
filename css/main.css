@@ -4,7 +4,22 @@
 /*
 /*****************************************************************************/
 
-@import url(http://fonts.googleapis.com/css?family=Carrois+Gothic|Rokkitt);
+@font-face {
+font-family: Edmondsans;
+src: url("/fonts/Edmondsans-Regular.otf") format("opentype");
+}
+
+@font-face {
+font-family: Edmondsans;
+font-weight: lighter;
+src: url("/fonts/Edmondsans-Medium.otf") format("opentype");
+}
+
+@font-face {
+font-family: Edmondsans;
+font-weight: bold;
+src: url("/fonts/Edmondsans-Bold.otf") format("opentype");
+}
 
 /* Global Reset */
 * {
@@ -15,27 +30,37 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #EEEEEE;
-  font-family: Monaco, "Courier New";
-  font-size: small;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#F2E8DA));
+  background: -moz-linear-gradient(top,  #EEE,  #F2E8DA);
+  font-family: 'Edmondsans', serif;
   text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Monaco, "Courier New";
+  font-family: 'Edmondsans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #444;
 }
 
 h1 { margin-bottom: 1em; }
 
 p { 
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: serif;
   margin: 1em 0;
   font-size: 16px;
+  color: #444;
 }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a {
+  color: #D96D53;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #BE3F18;
+  text-decoration: none;
+}
 
 /*****************************************************************************/
 /*
@@ -52,13 +77,13 @@ ul.posts li {
 }
 
 ul.posts li a {
-  text-decoration: none;
-  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 ul.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
+  color: #BBB;
+  font-family: "Courier New", monospace;
   font-size: 80%;
 }
 
@@ -69,44 +94,17 @@ ul.posts span {
 /*****************************************************************************/
 
 .site {
-  font-size: 115%;
   text-align: justify;
   width: 42em;
   margin: 3em auto 2em 4em;
   padding: 3em 1em .5em 1em;
-  line-height: 1.5em;
-  background-color: #FFFFFF;
 }
 
 .site .header a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.site .header h1.title {
-  display: inline-block;
-  margin-bottom: 2em;
-}
-
-.site .header h1.title a {
-  color: #1c52a2;
-}
-
-.site .header h1.title a:hover {
-  text-decoration: none;
-}
-
-.site .header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
-
-.site .header a.extra:hover {
-  color: #000;
-}
-
-.site .meta {
-  color: #aaa;
+  letter-spacing: 6px;
+  line-height: 2em;
+  border: solid 2px;
+  padding: 0.5em 0.5em 0.35em 0.5em;
 }
 
 .site .footer {
@@ -116,25 +114,15 @@ ul.posts span {
   margin-top: 2em;
   padding-top: 0.5em;
   overflow: hidden;
+
 }
 
 .site .footer .contact {
   float: left;
   margin-right: 3em;
-}
-
-.site .footer .contact a {
-  color: #8085C1;
-}
-
-.site .footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
-
-.site .footer .rss img {
-  border: 0;
+  color: #BBB;
+  font-family: "Courier New", monospace;
+  font-size: 80%;
 }
 
 /*****************************************************************************/
@@ -142,6 +130,17 @@ ul.posts span {
 /* Posts
 /*
 /*****************************************************************************/
+
+.post h2 {
+  font-weight: lighter;
+  letter-spacing: 4px;
+}
+
+.post span {
+  color: #BBB;
+  font-family: "Courier New", monospace;
+  font-size: 80%;
+}
 
 /* standard */
 .post pre {
