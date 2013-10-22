@@ -27,13 +27,54 @@ src: url("/fonts/Edmondsans-Bold.otf") format("opentype");
   padding: 0;
 }
 
-html, body { height: 100%; }
 
-body {
+html {
   background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#F2E8DA));
   background: -moz-linear-gradient(top,  #EEE,  #F2E8DA);
-  font-family: 'Edmondsans', serif;
-  text-align: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.site {
+  text-align: justify;
+  width: 42em;
+  margin: 3em auto 2em 4em;
+  padding: 3em 1em .5em 1em;
+  font-family: 'Edmondsans', sans-serif;
+}
+
+.site .header a {
+  letter-spacing: 6px;
+  line-height: 2em;
+  border: solid 2px;
+  padding: 0.5em 0.5em 0.35em 0.5em;
+}
+
+.site .footer {
+  font-size: 80%;
+  color: #666;
+  border-top: 4px solid #eee;
+  margin-top: 2em;
+  padding-top: 0.5em;
+  overflow: hidden;
+
+}
+
+.site .footer .contact {
+  float: left;
+  margin-right: 3em;
+  color: #BBB;
+  font-family: "Courier New", monospace;
+  font-size: 80%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,44 +123,6 @@ ul.posts li a {
 }
 
 ul.posts span {
-  color: #BBB;
-  font-family: "Courier New", monospace;
-  font-size: 80%;
-}
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.site {
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em 4em;
-  padding: 3em 1em .5em 1em;
-}
-
-.site .header a {
-  letter-spacing: 6px;
-  line-height: 2em;
-  border: solid 2px;
-  padding: 0.5em 0.5em 0.35em 0.5em;
-}
-
-.site .footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  padding-top: 0.5em;
-  overflow: hidden;
-
-}
-
-.site .footer .contact {
-  float: left;
-  margin-right: 3em;
   color: #BBB;
   font-family: "Courier New", monospace;
   font-size: 80%;
