@@ -1,0 +1,36 @@
+@font-face {
+   font-family: "Apercu";
+   src: url("/fonts/Apercu.otf");
+}
+
+* {
+   margin: 0;
+   pading: 0;
+   box-sizing: border-box;
+}
+
+.header {
+   position: relative;
+   max-width: 768px;
+   margin: 0 auto;
+   padding: 0 0 20px 0;
+   font-family: "Apercu";
+}
+
+.header h1 {
+   position: absolute;
+   left: 150px;
+   top: 70px;
+
+}
+
+.header h2 {
+   height: 120px;
+   width: 120px;
+
+   padding: 88px 5px 0 0;
+   text-align: right;
+
+   background-color: #F0DB4E;
+   border-radius: 2px;
+}
