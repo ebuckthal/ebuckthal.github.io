@@ -11,11 +11,15 @@
 
  @-webkit-keyframes rotating {
     0% {
-       -webkit-transform: rotateY(0deg);
+      -webkit-transform: rotateY(-40deg) translateY(20px) rotateZ(-10deg);
+}
+
+50% {
+      -webkit-transform: rotateY(40deg) translateY(-20px) rotateZ(10deg);
 }
 
 100% {
-   -webkit-transform: rotateY(360deg);
+      -webkit-transform: rotateY(-40deg) translateY(20px) rotateZ(-10deg);
 }
 }
 
@@ -26,12 +30,11 @@
 
    -webkit-transform: rotateY(20deg);
 
-   /*
+   
    -webkit-animation-duration: 3s;
    -webkit-animation-name: rotating;
    -webkit-animation-timing-function: linear;
    -webkit-animation-iteration-count: infinite;
-   */
 
    -webkit-transform-style: preserve-3d;
    -moz-transform-style: preserve-3d;
@@ -50,6 +53,9 @@
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;*/
+
+   background-color: #666;
+   border-radius: 2px;
  }
 
  #logo .front {
@@ -61,3 +67,34 @@
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
  }
+
+ #logo .left {
+    left: 50px;
+    width: 20px;
+    height: 120px;
+ }
+
+ #logo .right {
+    left: 50px;
+    width: 20px;
+    height: 120px;
+ }
+
+ #logo .top {
+    width: 120px;
+    height: 20px;
+    top: 50px;
+ }
+
+ #logo .bottom {
+    width: 120px;
+    height: 20px;
+    top: 50px;
+ }
+
+#logo .front  { -webkit-transform: rotateY(   0deg ) translateZ(  10px ); }
+#logo .back   { -webkit-transform: rotateX( 180deg ) translateZ(  10px ); }
+#logo .right  { -webkit-transform: rotateY(  90deg ) translateZ( 60px ); }
+#logo .left   { -webkit-transform: rotateY( -90deg ) translateZ( 60px ); }
+#logo .top    { -webkit-transform: rotateX(  90deg ) translateZ( 60px ); }
+#logo .bottom { -webkit-transform: rotateX( -90deg ) translateZ( 60px ); }
