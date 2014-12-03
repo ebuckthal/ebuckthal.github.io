@@ -9,6 +9,13 @@
    box-sizing: border-box;
 }
 
+#canvas-container {
+   position: fixed;
+   left: 50%;
+   width: 1000px;
+   margin-left: -500px;
+}
+
 .header {
    position: relative;
    max-width: 768px;

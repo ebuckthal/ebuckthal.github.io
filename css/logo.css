@@ -2,7 +2,6 @@
    width: 100px;
    height: 100px;
    position: relative;
-   margin: 20px; 
    -webkit-perspective: 300px;
    -moz-perspective: 300px;
    -o-perspective: 300px;
