@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "DINPro";
+  src: url("/assets/fonts/DINPro-Medium.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DINPro";
+  src: url("/assets/fonts/DINPro-Light.woff");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "DINPro";
+  src: url("/assets/fonts/DINPro-Black.woff");
+  font-weight: 700;
+}
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*="pure-u"] {
+  /* Set your content font stack here: */
+  font-family: "DINPro", Helvetica, Arial, sans-serif;
+}
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow-x: hidden;
+}
+h1 {
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+}
+div.header {
+  margin-top: 20px;
+}
+div.header div.logo {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 150px;
+  height: 150px;
+  text-transform: uppercase;
+  text-align: center;
+}
+div.hero {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+div#index div.hero {
+  height: 500px;
+  background-image: url("https://placehold.it/960x500");
+}
+div#project-test div.hero {
+  padding: 20px 20px 20px 400px;
+  height: 600px;
+  background-image: url("https://placehold.it/1000x600");
+}
+div.card {
+  margin: 20px 0;
+  color: black;
+}
+@media screen and (min-width: 48em) {
+  div.card.right {
+    margin-left: 10px;
+  }
+  div.card.left {
+    margin-right: 10px;
+  }
+}
+div.card img {
+  width: 100%;
+}
+div.footer {
+  position: relative;
+  padding: 50px 50px 30px;
+  margin: 0 -50px;
+  background-color: yellow;
+}
+div.footer .right,
+div.footer .left {
+  margin: 20px 0;
+}
+@media screen and (min-width: 48em) {
+  div.footer .right {
+    margin-left: 10px;
+  }
+  div.footer .left {
+    margin-right: 10px;
+  }
+}
